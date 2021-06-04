@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+  font-family: 'Fredoka One';
+}
+
+html{
+  background-image: url("/Assets/bg.png");
+  background-position: 50px 150px;
+}
+
+body{
+  overflow: hidden;
+}
+
+#content{
+  position: relative;
+  border-radius: 70px;
+  background: white;
+  width: calc(90% - 50px);
+  padding: 25px;
+  padding-bottom: 60px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  margin: 0 auto;
+}
+
+hr{
+  width: 50%;
+  border: 4px solid #000000;
+  border-radius: 6px;
+  background: transparent;
+}
+
+#clicky{
+  padding: 15px;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+#clicky h2{
+  pointer-events: none;
+}
+
+button{
+  transition: all 0.2s;
+  outline: none;
+  border: 3px solid #000000;
+  border-radius: 50px;
+  background: white;
+  padding: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+button:hover:not(.unlocked):not(#sushi):not(#sushiFall){
+  transform: scale(1.1);
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 5px 0px, rgba(0, 0, 0, 0.06) 0px 3px 5px 0px;
+}
+
+button:active{
+  transform: scale(1);
+  box-shadow: none;
+}
+
+#content #catGif{
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+
+#tailCat{
+  width: 10vw;
+  pointer-events: none;
+  float: right;
+}
+
+#menuShadow{
+  background-color: #00000080;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+#menu{
+  color: #000000;
+  z-index: 100;
+  border-radius: 8px;
+  background-color: #ffffff;
+	width: 40%;
+  margin: 0;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  right: 50vw;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 15px;
+  height: 85vh;
+  overflow: auto;
+}
+
+.small{
+  width: 35%;
+  border: 4px solid #000000;
+  border-radius: 6px;
+}
+
+#redShadow{
+  opacity: 0;
+  background-color: #ff0000;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 60s all;
+}
+
+#sushi{
+  position: absolute;
+  bottom: 40px;
+  left: 0px;
+  height: 0px;
+  width: 0px;
+  opacity: 0;
+  transition: 0.5s all;
+  background: transparent;
+  border: none;
+  align-content: center;
+  outline: none;
+}
+
+#sushi img{
+  width: 40px;
+}
+
+#sushi:hover{
+  opacity: 1;
+}
+
+#credit{
+  float: right;
+}

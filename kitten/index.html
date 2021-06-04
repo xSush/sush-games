@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="An Idle game by CatR3kd, with too many easter eggs :3"/>
+    <meta name="keywords" content="idle, clicker, game, cat, kitty, kitten, catr3kd, js, html"/>
+    <meta name="author" content="CatR3kd"/>
+    <meta name="subject" content="A game about getting fish for you and your friends"/>
+    <meta property="og:title" content="Kitten Clicker"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://Kitten-Clicker.catr3kd.repl.co"/>
+    <meta property="og:image" content="tail.gif"/>
+    <meta property="og:description" content="An Idle game by CatR3kd, with too many easter eggs :3"/>
+    <meta name="theme-color" content="#ff8cdd">
+    <title>Kitten Clicker</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" 
+      type="image/png" 
+      href="/Assets/fish.png">
+  </head>
+  <body align="center">
+    <div id="redShadow"></div>
+    <div id="menuShadow">
+      <div id="menu">
+        <h2>Kitten Clicker</h2>
+        <hr>
+        <br>
+        <p>Welcome to Kitten Clicker! Kitten Clicker is an Idle game made by CatR3kd, where your goal is to <strike>ascend</strike> form a <b>fish monopoly</b> and go down in hiss-tory for you and your cat friends :3<br>Below is a list of all the available upgrades, good luck!</p>
+        <br>
+        <br>
+        <h3>More Fish</h3>
+        <hr class="small">
+        <p>More fish is pretty simple: Once you buy it, you get 1 more fish every time you click!</p>
+        <br>
+        <h3>Fisherman</h3>
+        <hr class="small">
+        <p>For every fisherman you have, you get 1 fish per second!</p>
+        <br>
+        <h3>Fisherman Recruiter</h3>
+        <hr class="small">
+        <p>Fisherman recruiter will buy one fisherman every second, (If possible) <i>without raising the price.</i> Only one is unlockable.</p>
+        <br>
+        <h3>Cybernetic Fisherman</h3>
+        <hr class="small">
+        <p>Just like a fisherman, except instead of 1 fish per second, it's <b>100</b></p>
+        <br>
+        <h3>Kitten Sidekick</h3>
+        <hr class="small">
+        <p>Kitten Sidekicks will click once a second, but instead of giving you 1 fish, it gives you the amount of fish <i>you</i> earn from clicking!</p>
+        <br>
+        <h3>Kitten Overlord</h3>
+        <hr class="small">
+        <p>Similar to the fisherman recruiter, but for kitten sidekicks. Only one is unlockable.</p>
+        <br>
+        <h3>Ascension</h3>
+        <hr class="small">
+        <p>Resets your money and upgrade prices, but you keep your upgrades! Includes Recruiter types. <b><i>Warning: Ascension has been found to have many strange side effects, such as-</i></b></p>
+        <br>
+        <br>
+        <button id="continue" onclick="hideMenu();">Continue!</button>
+        <br>
+        <small><i>A special thanks to Greay for art, Orteil for inspiriation, and Hit-Point for music :3</i></small>
+      </div>
+    </div>
+    <div id="content">
+      <h1 id="title">Kitten Clicker</h1>
+      <h4 id="message"></h4>
+      <hr>
+      <br>
+      <button id="clicky" onclick="clickFish();"><h2 id="fishCount">Fish: 0</h2></button>
+      <br>
+      <br>
+      <br>
+      <button id="moreFish" onclick="moreFish();">More Fish: $50</button>
+      <br>
+      <br>
+      <button id="fisherMan" onclick="fisherMan();">Fisherman: $1000</button>
+      <br>
+      <br>
+      <button id="fisherManFinder" onclick="fisherManFinder();">Fisherman Recruiter: $5000</button>
+      <br>
+      <br>
+      <button id="cyberMan" onclick="cyberMan();">Cybernetic Fisherman: $50000</button>
+      <br>
+      <br>
+      <button id="catPal" onclick="catPal();">Kitten Sidekick: $500000</button>
+      <br>
+      <br>
+      <button id="kittyOverlord" onclick="kittyOverlord();">Kitten Overlord: $100000</button>
+      <br>
+      <br>
+      <button id="ascend" onclick="ascend();">Ascension: $100000000</button>
+      <button id="sushi" onclick="sushi();"><img src="/Assets/sushi.png"/></button>
+      <div id="catGif">
+        <img src="/Assets/tail.gif" id="tailCat"/>
+      </div>
+    </div>
+    <br>
+    <small id="credit">
+    &copy; 2021<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>
+    CatR3kd
+    </small>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/mathusummut/confetti.js/confetti.min.js"></script>
+  </body>
+</html>
