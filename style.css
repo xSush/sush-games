@@ -5,8 +5,8 @@ body {
 	font-family: 'M PLUS Rounded 1c', sans-serif;
 	overflow: hidden;
 	color: #000;
-  background: rgb(58,180,171);
-background: linear-gradient(90deg, rgba(58,180,171,1) 0%, rgba(226,29,253,1) 50%, rgba(252,176,69,1) 100%);
+background: rgb(122,135,40);
+background: linear-gradient(90deg, rgba(122,135,40,1) 0%, rgba(255,164,0,1) 50%, rgba(212,30,75,1) 100%););
 }
 
 a {
